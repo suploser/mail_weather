@@ -1,0 +1,32 @@
+<div>
+    <div>
+        <h1>天气预报</h1>
+    </div>
+    <div>
+        {% for e_data in data %}
+        <h3 style="margin:20px auto 10px auto">{{e_data['date']}}</h3>
+        <div>
+            <p>
+               <span>日出时间:</span>
+               <span>{{e_data['sr']}}</span>
+               <span style="width:40%;margin-left:30px">日落时间:</span>
+               <span>{{e_data['ss']}}</span>  
+            </p>
+            <p>
+               <span>最高温度:</span>
+               <span>{{e_data['tmp_max']}}</span>
+               <span style="width:40%;margin-left:30px">最低温度:</span>
+               <span>{{e_data['tmp_min']}}</span>
+            </p>
+            <p>
+               <span>风力:</span>
+               <span>{{e_data['wind_sc']}}</span>
+            </p>
+            <p>
+               <span>降水概率:</span>
+               <span>{{e_data['pop']}}%</span>
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
