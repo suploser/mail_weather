@@ -16,12 +16,12 @@ def _format_addr(s):
     
 #from_addr=input('From:')
 
-from_addr='sup_loser@163.com'
+from_addr='****'
 #password=input('Password:')
-password='1321131987qx'
+password='******'
 #to_addr=input('To:')
 
-to_addr='1321131987@qq.com'
+to_addr='******'
 #smtp_server=input('SMTP server:')
 smtp_server='smtp.163.com'
 
